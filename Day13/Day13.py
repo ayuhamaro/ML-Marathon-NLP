@@ -48,4 +48,4 @@ word = 'using'
 print(lemmatizer.lemmatize(word, get_wordnet_pos(word)))
 
 sentence = "The striped bats are hanging on their feet for best"
-print("自行填入")
+print([lemmatizer.lemmatize(w, get_wordnet_pos(w)) for w in nltk.word_tokenize(sentence)])
